@@ -81,6 +81,10 @@
               "version": "[10.0.2, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "QuestPDF": {
               "target": "Package",
               "version": "[2026.2.0, )"
@@ -408,6 +412,10 @@
               "target": "Package",
               "version": "[10.0.2, )",
               "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             },
             "QuestPDF": {
               "target": "Package",
@@ -737,6 +745,10 @@
               "version": "[10.0.2, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "QuestPDF": {
               "target": "Package",
               "version": "[2026.2.0, )"
@@ -1059,6 +1071,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[10.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.1, )"
             },
             "QuestPDF": {
               "target": "Package",

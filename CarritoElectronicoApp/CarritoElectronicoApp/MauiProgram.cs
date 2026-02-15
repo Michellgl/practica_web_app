@@ -4,30 +4,18 @@ using CarritoElectronicoApp.Views;
 using Microsoft.Extensions.Logging;
 using QuestPDF.Infrastructure;
 
-
-
-
 namespace CarritoElectronicoApp
 {
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()
         {
-            #if WINDOWS
+            // Configuración de licencia de PDF (lo que ella ya tenía)
+#if WINDOWS
             QuestPDF.Settings.License = LicenseType.Community;
-            #endif
-
+#endif
 
             var builder = MauiApp.CreateBuilder();
-            builder.Services.AddSingleton<DatabaseService>();
-            builder.Services.AddSingleton<CarritoService>();
-            builder.Services.AddTransient<MainPage>();
-            builder.Services.AddTransient<CarritoPage>();
-            builder.Services.AddTransient<PagoPage>();
-            
-
-
-
 
             builder
                 .UseMauiApp<App>()
@@ -37,8 +25,23 @@ namespace CarritoElectronicoApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            // --- INYECCIÓN DE DEPENDENCIAS ---
+
+            // 1. Servicios de Datos (Base de datos local y Carrito)
+            builder.Services.AddSingleton<DatabaseService>();
+            builder.Services.AddSingleton<CarritoService>();
+
+            // 2. NUEVO: Servicio de API (Para conectar con tu Spring Boot)
+            // Sin esta línea, la app fallará al intentar enviar la compra
+            builder.Services.AddSingleton<ApiService>();
+
+            // 3. Páginas (Vistas)
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<CarritoPage>();
+            builder.Services.AddTransient<PagoPage>();
+
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

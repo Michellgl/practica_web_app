@@ -1,4 +1,4 @@
-<api type="debug" assembly-name="CarritoElectronicoApp" mvid="837bef37129f4fafbaf96dc74c163583">
+<api type="debug" assembly-name="CarritoElectronicoApp" mvid="5dfa101c83794c39b831aa6f7c954d84">
   <java-to-managed>
     <entry java-name="crc64fabf69320b248bfd/MainActivity" managed-name="CarritoElectronicoApp.MainActivity, CarritoElectronicoApp" managed-type-token-id="33554444" />
     <entry java-name="crc64fabf69320b248bfd/MainApplication" managed-name="CarritoElectronicoApp.MainApplication, CarritoElectronicoApp" managed-type-token-id="33554445" />

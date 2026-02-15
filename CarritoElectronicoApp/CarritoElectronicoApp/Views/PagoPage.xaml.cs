@@ -1,31 +1,29 @@
 using CarritoElectronicoApp.Models;
 using CarritoElectronicoApp.Services;
+
 namespace CarritoElectronicoApp.Views;
 
 public partial class PagoPage : ContentPage
 {
     private readonly CarritoService _carritoService;
-    private readonly DatabaseService _database;
 
-
-
-    public PagoPage(CarritoService carritoService, DatabaseService database)
+    public PagoPage(CarritoService carritoService)
     {
         InitializeComponent();
-
         _carritoService = carritoService;
-        _database = database;
     }
-        protected override void OnAppearing()
+
+    protected override void OnAppearing()
     {
         base.OnAppearing();
 
+        // Mostrar productos en resumen
         ListaResumen.ItemsSource = _carritoService.Items;
-        LabelTotal.Text = $"Total: ${_carritoService.ObtenerTotal()}";
-    
-    }
-   
 
+        // Mostrar total
+        var total = _carritoService.ObtenerTotal();
+        LabelTotal.Text = $"Total: ${total:F2}";
+    }
 
     private async void OnConfirmarPagoClicked(object sender, EventArgs e)
     {
@@ -35,61 +33,47 @@ public partial class PagoPage : ContentPage
             return;
         }
 
-        var metodo = PickerMetodoPago.SelectedItem.ToString();
+        LoadingOverlay.IsVisible = true;
+        ((Button)sender).IsEnabled = false;
 
-        var ticketService = new TicketService();
-
-        var productos = _carritoService.Items.ToList();
-        var total = _carritoService.ObtenerTotal();
-
-        var ruta = ticketService.GenerarTicket(productos, total, metodo);
-
-        await DisplayAlert("Pago Exitoso",
-            "Tu compra fue realizada correctamente 🎉",
-            "OK");
-
-        await ticketService.AbrirTicketAsync(ruta);
-
-
-        await _carritoService.VaciarCarritoAsync();
-
-        await Navigation.PopToRootAsync();
-
-        // 1. Guardar compra
-        var compra = new Compra
+        try
         {
-            Fecha = DateTime.Now,
-            Total = total,
-            MetodoPago = metodo
-        };
+            // Total y método de pago
+            var total = _carritoService.ObtenerTotal();
+            var metodo = PickerMetodoPago.SelectedItem?.ToString() ?? "Desconocido";
 
-        await _database.InsertAsync(compra);
+            // Generar ticket simulado en texto
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("********** TICKET DE COMPRA **********");
+            sb.AppendLine($"Fecha: {DateTime.Now}");
+            sb.AppendLine($"Método de Pago: {metodo}");
+            sb.AppendLine("--------------------------------------");
 
-        foreach (var item in productos)
-        {
-            var detalle = new DetalleCompra
+            foreach (var item in _carritoService.Items)
             {
-                CompraId = compra.Id,
-                NombreProducto = item.Nombre,
-                Cantidad = item.Cantidad,
-                Precio = item.Precio
-            };
+                sb.AppendLine($"{item.Nombre} x{item.Cantidad} - ${item.Precio * item.Cantidad:F2}");
+            }
 
-            await _database.InsertAsync(detalle);
+            sb.AppendLine("--------------------------------------");
+            sb.AppendLine($"TOTAL: ${total:F2}");
+            sb.AppendLine("¡Gracias por su compra!");
+            sb.AppendLine("**************************************");
+
+            // Mostrar ticket en un mensaje
+            await DisplayAlert("Ticket de Compra", sb.ToString(), "OK");
+
+            // Vaciar carrito y volver al inicio
+            await _carritoService.VaciarCarritoAsync();
+            await Navigation.PopToRootAsync();
         }
-
-        // 2. Vaciar carrito
-        await _carritoService.VaciarCarritoAsync();
-
-        // 3. Navegar
-        await Navigation.PopToRootAsync();
-
-
-
+        catch (Exception ex)
+        {
+            await DisplayAlert("Error", $"Error al procesar el pago: {ex.Message}", "OK");
+        }
+        finally
+        {
+            LoadingOverlay.IsVisible = false;
+            ((Button)sender).IsEnabled = true;
+        }
     }
-
-
-
-
-
 }

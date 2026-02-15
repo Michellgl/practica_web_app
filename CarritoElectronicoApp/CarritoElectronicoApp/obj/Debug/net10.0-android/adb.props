@@ -1,2 +1,2 @@
-AdbTarget=-s RFCW311CEWM
+AdbTarget=-s emulator-5554
 AdbOptions=

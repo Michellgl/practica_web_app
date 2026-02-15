@@ -38606,6 +38606,7 @@
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.1",
       "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "Newtonsoft.Json >= 12.0.1",
       "QuestPDF >= 2026.2.0",
       "XYS.Lab.Report >= 1.0.1.16",
       "sqlite-net-pcl >= 1.9.172"
@@ -38614,6 +38615,7 @@
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.1",
       "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "Newtonsoft.Json >= 12.0.1",
       "QuestPDF >= 2026.2.0",
       "XYS.Lab.Report >= 1.0.1.16",
       "sqlite-net-pcl >= 1.9.172"
@@ -38622,6 +38624,7 @@
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.1",
       "Microsoft.NET.ILLink.Tasks >= 10.0.2",
+      "Newtonsoft.Json >= 12.0.1",
       "QuestPDF >= 2026.2.0",
       "XYS.Lab.Report >= 1.0.1.16",
       "sqlite-net-pcl >= 1.9.172"
@@ -38629,6 +38632,7 @@
     "net10.0-windows10.0.19041": [
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.1",
+      "Newtonsoft.Json >= 12.0.1",
       "QuestPDF >= 2026.2.0",
       "XYS.Lab.Report >= 1.0.1.16",
       "sqlite-net-pcl >= 1.9.172"
@@ -38714,6 +38718,10 @@
             "target": "Package",
             "version": "[10.0.2, )",
             "autoReferenced": true
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.1, )"
           },
           "QuestPDF": {
             "target": "Package",
@@ -39043,6 +39051,10 @@
             "version": "[10.0.2, )",
             "autoReferenced": true
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "QuestPDF": {
             "target": "Package",
             "version": "[2026.2.0, )"
@@ -39371,6 +39383,10 @@
             "version": "[10.0.2, )",
             "autoReferenced": true
           },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "QuestPDF": {
             "target": "Package",
             "version": "[2026.2.0, )"
@@ -39693,6 +39709,10 @@
           "Microsoft.Maui.Controls": {
             "target": "Package",
             "version": "[10.0.1, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.1, )"
           },
           "QuestPDF": {
             "target": "Package",
