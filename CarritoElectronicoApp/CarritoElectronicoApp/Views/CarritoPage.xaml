@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CarritoElectronicoApp.Views.CarritoPage"
+    BackgroundColor="#F2F2F2"
+
+    Title="Mi Carrito">
+
+    <VerticalStackLayout Padding="10">
+
+        <CollectionView x:Name="ListaCarrito"
+                Margin="10"
+                ItemsLayout="VerticalList">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <Frame BackgroundColor="White"
+                           CornerRadius="20"
+                           Padding="15"
+                           Margin="15"
+                           HasShadow="True"
+                           HorizontalOptions="Center"
+                           MaximumWidthRequest="500">
+
+                        <Grid ColumnDefinitions="100,*,Auto"
+                      RowDefinitions="Auto,Auto"
+                      ColumnSpacing="10">
+
+                            <!-- Imagen -->
+                            <Image Source="{Binding Imagen}"
+                           HeightRequest="90"
+                           WidthRequest="90"
+                           Aspect="AspectFit"
+                           Grid.RowSpan="2"/>
+
+                            <!-- Nombre -->
+                            <Label Text="{Binding Nombre}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           Grid.Column="1"/>
+
+                            <!-- Precio -->
+                            <Label Text="{Binding Precio, StringFormat='${0:F2}'}"
+                           TextColor="Green"
+                           FontSize="16"
+                           Grid.Column="1"
+                           Grid.Row="1"/>
+
+                            <!-- Controles de cantidad -->
+                            <HorizontalStackLayout Grid.Column="2"
+                                           Grid.RowSpan="2"
+                                           VerticalOptions="Center"
+                                           Spacing="5">
+
+                                <Button Text="−"
+                                WidthRequest="35"
+                                HeightRequest="35"
+                                CornerRadius="17"
+                                BackgroundColor="#E0E0E0"
+                                TextColor="Black"
+                                Clicked="OnDisminuirClicked"/>
+
+                                <Label Text="{Binding Cantidad}"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   FontAttributes="Bold"
+                                   WidthRequest="30"
+                                   HorizontalTextAlignment="Center"
+                                   TextColor="Black"
+                                   FontSize="16"/>
+                                <Button Text="+"
+                                    WidthRequest="35"
+                                    HeightRequest="35"
+                                    CornerRadius="17"
+                                    BackgroundColor="#1976D2"
+                                    TextColor="White"
+                                    Clicked="OnAumentarClicked"/>
+
+                            </HorizontalStackLayout>
+
+                        </Grid>
+
+                    </Frame>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+
+        <Label x:Name="LabelTotal"
+           FontSize="22"
+           FontAttributes="Bold"
+           TextColor="Green"
+           HorizontalTextAlignment="Center"/>
+        <Button Text="Proceder al Pago"
+        BackgroundColor="#2E7D32"
+        TextColor="White"
+        CornerRadius="20"
+        HeightRequest="50"
+        Margin="20,0,20,30"
+        Clicked="OnIrPagoClicked"/>
+
+
+
+    </VerticalStackLayout>
+
+</ContentPage>

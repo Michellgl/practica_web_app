@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CarritoElectronicoApp.MainPage"
+    BackgroundColor="#F1F5F9"
+    Title="Productos Electrónicos">
+
+    <VerticalStackLayout>
+
+        <Button Text="Ver Carrito"
+                Clicked="OnVerCarritoClicked"
+                BackgroundColor="DarkBlue"
+                TextColor="White"
+                Margin="10"/>
+        <Picker 
+        x:Name="PickerCategoria"
+        Title="Seleccionar categoría"
+        TitleColor="Black"
+        TextColor="Black"
+        SelectedIndexChanged="OnCategoriaChanged" />
+
+
+
+
+        <CollectionView x:Name="ListaProductos">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical" Span="2"/>
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame CornerRadius="15"
+                   Margin="8"
+                   Padding="10"
+                   HasShadow="True"
+                   BackgroundColor="#FFFFFF">
+
+                        <VerticalStackLayout Spacing="6">
+
+                            <Image Source="{Binding Imagen}"
+                           HeightRequest="120"
+                           Aspect="AspectFit"/>
+
+                            <Label Text="{Binding Nombre}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#1E293B"/>
+
+                            <Label Text="{Binding Descripcion}"
+                           FontSize="13"
+                           TextColor="#64748B"/>
+
+                            <Label Text="{Binding Precio, StringFormat='${0:F2}'}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#2563EB"/>
+
+                            <Button Text="Agregar"
+                            BackgroundColor="#2563EB"
+                            TextColor="White"
+                            CornerRadius="10"
+                            Clicked="OnAgregarCarritoClicked"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,184 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\services\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\views\\pagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\views\\pagopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\views\\pagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\views\\pagopage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\views\\carritopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\views\\carritopage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\models\\compra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\models\\detallecompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|c:\\users\\migal\\source\\repos\\carritoelectronicoapp\\carritoelectronicoapp\\models\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EC6B31F-5575-2BE7-1092-6E46FE458AA0}|CarritoElectronicoApp\\CarritoElectronicoApp.csproj|solutionrelative:carritoelectronicoapp\\models\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Compra.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\Compra.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Models\\Compra.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\Compra.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Models\\Compra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T23:44:42.309Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MainPage.xaml.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\MainPage.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACwAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:58:17.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MauiProgram.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\MauiProgram.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:23:02.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Services\\TicketService.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Services\\TicketService.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Services\\TicketService.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Services\\TicketService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:21:21.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CarritoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\CarritoPage.xaml.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Views\\CarritoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\CarritoPage.xaml.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Views\\CarritoPage.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAUwAsAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T23:58:28.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Models\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\DatabaseService.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Models\\DatabaseService.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T23:45:59.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DetalleCompra.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\DetalleCompra.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Models\\DetalleCompra.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Models\\DetalleCompra.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Models\\DetalleCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T23:45:41.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MainPage.xaml",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\MainPage.xaml",
+              "RelativeToolTip": "CarritoElectronicoApp\\MainPage.xaml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-14T23:35:45.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagoPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\PagoPage.xaml.cs",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Views\\PagoPage.xaml.cs",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\PagoPage.xaml.cs",
+              "RelativeToolTip": "CarritoElectronicoApp\\Views\\PagoPage.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-15T01:32:13.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PagoPage.xaml",
+              "DocumentMoniker": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\PagoPage.xaml",
+              "RelativeDocumentMoniker": "CarritoElectronicoApp\\Views\\PagoPage.xaml",
+              "ToolTip": "C:\\Users\\migal\\source\\repos\\CarritoElectronicoApp\\CarritoElectronicoApp\\Views\\PagoPage.xaml",
+              "RelativeToolTip": "CarritoElectronicoApp\\Views\\PagoPage.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-14T23:39:20.653Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

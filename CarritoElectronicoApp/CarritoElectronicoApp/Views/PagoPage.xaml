@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarritoElectronicoApp.Views.PagoPage"
+             Title="Pago"
+             BackgroundColor="#F2F2F2">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Resumen -->
+            <Label Text="Resumen de Compra"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center"/>
+
+            <CollectionView x:Name="ListaResumen"
+                            HeightRequest="250">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame CornerRadius="15"
+                               Padding="10"
+                               Margin="5"
+                               BackgroundColor="White">
+
+                            <Grid ColumnDefinitions="*,Auto">
+
+                                <Label Text="{Binding Nombre}"
+                                       FontAttributes="Bold"/>
+
+                                <Label Text="{Binding Cantidad}"
+                                       Grid.Column="1"/>
+
+                                <Label Text="{Binding Precio, StringFormat='${0:F2}'}"
+                                       Grid.Row="1"
+                                       TextColor="Green"/>
+
+                            </Grid>
+
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Total -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="20"
+                   Padding="15">
+
+                <Label x:Name="LabelTotal"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="Green"
+                       HorizontalTextAlignment="Center"/>
+            </Frame>
+
+            <!-- Método de pago -->
+            <Label Text="Método de Pago"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   FontSize="18"/>
+            <Frame BackgroundColor="White"
+       CornerRadius="15"
+       Padding="5">
+
+                <Picker x:Name="PickerMetodoPago"
+            Title="Seleccionar método de pago"
+            TitleColor="Black"
+            TextColor="Black"
+            BackgroundColor="White"
+            HeightRequest="50">
+
+                    <Picker.Items>
+                        <x:String>Tarjeta de Crédito</x:String>
+                        <x:String>Tarjeta de Débito</x:String>
+                        <x:String>PayPal</x:String>
+                        <x:String>Transferencia</x:String>
+                    </Picker.Items>
+
+                </Picker>
+
+            </Frame>
+
+
+            <!-- Botón confirmar -->
+            <Button Text="Confirmar Pago"
+                    BackgroundColor="#2E7D32"
+                    TextColor="White"
+                    CornerRadius="20"
+                    HeightRequest="50"
+                    Clicked="OnConfirmarPagoClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
